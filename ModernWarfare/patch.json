@@ -1,0 +1,905 @@
+{
+	"tribeData": {
+		"warfare": {
+			"color": 6381921,
+			"language": "mos,kva,ber,lin,lon,don,pa,ris,to,kyo,rom,e,war,saw,man,il,la,pea,rl,har,bor,sin,ga,pore,dre,sden",
+			"startingTech": [
+				"basic",
+				"fossilfuels"
+			],
+			"resourceModifier": {
+				"crop": 0
+			},
+			"terrainModifier": {
+				"forest": 0.8
+			},
+			"priceTier": 3,
+			"category": 2,
+			"bonus": 0,
+			"startingUnit": "soldier",
+			"techOverrides": {
+				"hunting": "fossilfuels",
+				"forestry": "fracking",
+				"mathematics": "refining",
+				"archery": "ballistics",
+				"spiritualism": "guerillatactics",
+				"riding": "motorized",
+				"freespirit": "logistics",
+				"chivalry": "rotocraft",
+				"trade": "capitalism",
+				"shields": "martiallaw",
+				"diplomacy": "nuclearwar",
+				"smithery": "tankproduction",
+				"meditation": "genevaconvention",
+				"philosophy": "medicine",
+				"sailing": "naval",
+				"navigation": "submarines",
+				"ramming": "coastguard",
+				"construction": "fastfood",
+				"farming": "warfarefarming"
+			},
+			"unitOverrides": {
+				"warrior": "soldier",
+				"giant": "fighterjet",
+				"rammership": "assaultboat",
+				"swordsman": "tank"
+			},
+			"startingResource": [
+				"oil"
+			],
+			"tribeAbilities": [
+				"oilrefiner"
+			],
+			"preview": [
+				{
+					"x": 0,
+					"y": 0,
+					"terrainType": "forest",
+					"resourceType": "oil"
+				},
+				{
+					"x": 0,
+					"y": 1,
+					"terrainType": "field",
+					"unitType": "tank"
+				},
+				{
+					"x": -1,
+					"y": 0,
+					"terrainType": "field",
+					"unitType": "fighterjet"
+				},
+				{
+					"x": -1,
+					"y": 2,
+					"terrainType": "field",
+					"unitType": "truck"
+				},
+				{
+					"x": 1,
+					"y": 1,
+					"terrainType": "field",
+					"unitType": "soldier"
+				},
+				{
+					"x": 1,
+					"y": 3,
+					"terrainType": "field",
+					"unitType": "artillerist"
+				}
+			],
+			"idx": -1
+		}
+	},
+	"tribeAbility": {
+		"oilrefiner": {
+			"idx": -1
+		}
+	},
+	"unitEffect": {
+		"ionized": {
+			"idx": -1
+		}
+	},
+	"improvementData": {
+		"shop": {
+			"cost": 5,
+			"work": 1,
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				}
+			],
+			"adjacencyImprovements": [
+				{
+					"improvement": "windmill"
+				},
+				{
+					"improvement": "forge"
+				},
+				{
+					"improvement": "sawmill"
+				},
+				{
+					"improvement": "refinary"
+				},
+				{
+					"improvement": "facility"
+				},
+				{
+					"improvement": "cafeteria"
+				}
+			],
+			"adjacencyRequirements": [
+				{
+					"improvement": "windmill"
+				},
+				{
+					"improvement": "forge"
+				},
+				{
+					"improvement": "sawmill"
+				},
+				{
+					"improvement": "refinary"
+				},
+				{
+					"improvement": "facility"
+				},
+				{
+					"improvement": "cafeteria"
+				}
+			],
+			"improvementAbilities": [
+				"limited"
+			],
+			"maxLevel": 8,
+			"idx": -1
+		},
+		"refinary": {
+			"cost": 5,
+			"adjacencyImprovements": [
+				{
+					"improvement": "derrick"
+				}
+			],
+			"adjacencyRequirements": [
+				{
+					"improvement": "derrick"
+				}
+			],
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				}
+			],
+			"improvementAbilities": [
+				"limited"
+			],
+			"maxLevel": 8,
+			"rewards": [
+				{
+					"population": 0
+				}
+			],
+			"idx": -1,
+			"growthRewards": [
+				{
+					"score": 0,
+					"population": 1
+				}
+			]
+		},
+		"facility": {
+			"cost": 5,
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				}
+			],
+			"adjacencyRequirements": [
+				{
+					"improvement": "mine"
+				}
+			],
+			"adjacencyImprovements": [
+				{
+					"improvement": "mine"
+				}
+			],
+			"improvementAbilities": [
+				"limited"
+			],
+			"maxLevel": 8,
+			"rewards": [
+				{
+					"population": 0
+				}
+			],
+			"growthRewards": [
+				{
+					"score":0,
+					"population": 2
+				}
+			],
+			"idx": -1
+		},
+		"oilcollecting": {
+			"cost": 2,
+			"terrainRequirements": [
+				{
+					"resource": "oil"
+				},
+				{
+					"resource": "game"
+				}
+			],
+			"improvementAbilities": [
+				"consumed"
+			],
+			"maxLevel": 0,
+			"rewards": [
+				{
+					"population": 1
+				}
+			],
+			"shouldSuggestUnlock": true,
+			"idx": -1
+		},
+		"createoil": {
+			"cost": 0,
+			"creates": [
+				{
+					"resource": "oil"
+				}
+			],
+			"improvementAbilities": [
+				"consumed"
+			],
+			"maxLevel": 0,
+			"idx": -1
+		},
+		"creategame": {
+			"cost": 0,
+			"creates": [
+				{
+					"resource": "game"
+				}
+			],
+			"improvementAbilities": [
+				"consumed"
+			],
+			"maxLevel": 0,
+			"idx": -1
+		},
+		"derrick": {
+			"cost": 3,
+			"terrainRequirements": [
+				{
+					"terrain": "forest"
+				}
+			],
+			"maxLevel": 0,
+			"rewards": [
+				{
+					"population": 1
+				}
+			],
+			"idx": -1
+		},
+		"greenhouse": {
+			"cost": 5,
+			"terrainRequirements": [
+				{
+					"resource": "crop"
+				}
+			],
+			"maxLevel": 0,
+			"rewards": [
+				{
+					"population": 2
+				}
+			],
+			"idx": -1
+		},
+		"cafeteria": {
+			"cost": 5,
+			"adjacencyImprovements": [
+				{
+					"improvement": "farm"
+				},
+				{
+					"improvement": "aquafarm"
+				},
+				{
+					"improvement": "greenhouse"
+				}
+			],
+			"adjacencyRequirements": [
+				{
+					"improvement": "farm"
+				},
+				{
+					"improvement": "aquafarm"
+				},
+				{
+					"improvement": "greenhouse"
+				}
+			],
+			"improvementAbilities": [
+				"limited"
+			],
+			"maxLevel": 8,
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				}
+			],
+			"idx": -1,
+			"growthRewards": [
+				{
+					"score":0,
+					"population": 1
+				}
+			]
+		},
+		"nukefacility": {
+			"cost": 10,
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				}
+			],
+			"improvementAbilities": [
+				"consumed",
+				"limited"
+			],
+			"maxLevel": 0,
+			"creates": [
+				{
+					"unit": "nukelauncher"
+				}
+			],
+			"idx": -1
+		}
+	},
+	"techData": {
+		"basic": {
+			"unitUnlocks": [
+				"giant",
+				"bunny",
+				"scout",
+				"transportship",
+				"warrior",
+				"babydragon",
+				"firedragon",
+				"dagger",
+				"nukelauncher",
+				"nukelauncherone",
+				"nukelaunchertwo",
+				"nukelauncherfinal"
+			]
+		},
+		"fossilfuels": {
+			"techUnlocks": [
+				"archery",
+				"forestry"
+			],
+			"improvementUnlocks": [
+				"oilcollecting"
+			],
+			"cost": 1,
+			"idx": -1
+		},
+		"fracking": {
+			"techUnlocks": [
+				"mathematics"
+			],
+			"improvementUnlocks": [
+				"derrick",
+				"clearforest"
+			],
+			"cost": 2,
+			"idx": -1
+		},
+		"refining": {
+			"improvementUnlocks": [
+				"refinary"
+			],
+			"unitUnlocks": [
+				"missilelauncher"
+			],
+			"cost": 3,
+			"idx": -1
+		},
+		"ballistics": {
+			"techUnlocks": [
+				"spiritualism"
+			],
+			"unitUnlocks": [
+				"artillerist"
+			],
+			"defenceBonusUnlocks": {
+				"forest": 15
+			},
+			"cost": 2,
+			"idx": -1
+		},
+		"guerillatactics": {
+			"improvementUnlocks": [
+				"growforest",
+				"foresttemple"
+			],
+			"cost": 3,
+			"idx": -1
+		},
+		"motorized": {
+			"techUnlocks": [
+				"roads",
+				"freespirit"
+			],
+			"unitUnlocks": [
+				"truck"
+			],
+			"cost": 1,
+			"idx": -1
+		},
+		"logistics": {
+			"techUnlocks": [
+				"chivalry"
+			],
+			"improvementUnlocks": [
+				"temple"
+			],
+			"abilityUnlocks": [
+				"disband"
+			],
+			"cost": 2,
+			"idx": -1
+		},
+		"rotocraft": {
+			"abilityUnlocks": [
+				"destroy"
+			],
+			"unitUnlocks": [
+				"helicopter"
+			],
+			"cost": 3,
+			"idx": -1
+		},
+		"capitalism": {
+			"improvementUnlocks": [
+				"shop"
+			],
+			"cost": 3,
+			"taskUnlocks": [
+				"wealth"
+			],
+			"idx": -1
+		},
+		"martiallaw": {
+			"techUnlocks": [
+				"diplomacy"
+			],
+			"unitUnlocks": [
+				"defender"
+			],
+			"abilityUnlocks": [
+				"peacetreaty"
+			],
+			"cost": 2,
+			"idx": -1
+		},
+		"nuclearwar": {
+			"idx": -1,
+			"cost": 3,
+			"abilityUnlocks": [
+				"embassy",
+				"capitalvision"
+			],
+			"improvementUnlocks": [
+				"nukefacility"
+			]
+		},
+		"tankproduction": {
+			"improvementUnlocks": [
+				"facility"
+			],
+			"unitUnlocks": [
+				"tank"
+			],
+			"cost": 3,
+			"idx": -1
+		},
+		"genevaconvention": {
+			"techUnlocks": [
+				"philosophy"
+			],
+			"improvementUnlocks": [
+				"mountaintemple"
+			],
+			"cost": 2,
+			"taskUnlocks": [
+				"pacifist"
+			],
+			"idx": -1
+		},
+		"medicine": {
+			"unitUnlocks": [
+				"medic"
+			],
+			"abilityUnlocks": [
+				"literacy"
+			],
+			"cost": 3,
+			"taskUnlocks": [
+				"genius"
+			],
+			"idx": -1
+		},
+		"naval": {
+			"techUnlocks": [
+				"navigation"
+			],
+			"unitUnlocks": [
+				"cutter"
+			],
+			"movementUnlocks": {
+				"ocean": 1
+			},
+			"cost": 2,
+			"idx": -1
+		},
+		"submarines": {
+			"unitUnlocks": [
+				"submarine"
+			],
+			"improvementUnlocks": [
+				"starfishing"
+			],
+			"cost": 3,
+			"idx": -1
+		},
+		"coastguard": {
+			"techUnlocks": [
+				"aquatism"
+			],
+			"unitUnlocks": [
+				"assaultboat"
+			],
+			"cost": 2,
+			"idx": -1
+		},
+		"fastfood": {
+			"improvementUnlocks": [
+				"cafeteria",
+				"burnforest"
+			],
+			"cost": 3,
+			"idx": -1
+		},
+		"warfarefarming": {
+			"techUnlocks": [
+				"construction"
+			],
+			"improvementUnlocks": [
+				"greenhouse"
+			],
+			"cost": 2,
+			"idx": -1
+		}
+	},
+	"unitAbility": {
+		"warfarebuild": {
+			"idx": -1
+		},
+		"ionize": {
+			"idx": -1
+		}
+	},
+	"unitData": {
+		"medic": {
+			"health": 100,
+			"defence": 0,
+			"movement": 1,
+			"range": 1,
+			"attack": 0,
+			"cost": 5,
+			"unitAbilities": [
+				"heal",
+				"autoheal",
+				"stiff",
+				"land"
+			],
+			"weapon": 4,
+			"promotionLimit": 3,
+			"idx": -1,
+			"prefab": "warrior"
+		},
+		"nukelauncher": {
+			"health": 100,
+			"defence": 10,
+			"movement": 0,
+			"range": 3,
+			"attack": 30,
+			"cost": 10,
+			"hidden": true,
+			"unitAbilities": [
+				"grow",
+				"warfarebuild",
+				"ionize",
+				"splash",
+				"stiff",
+				"static"
+			],
+			"weapon": 5,
+			"promotionLimit": 0,
+			"idx": -1,
+			"prefab": "transportship",
+			"growthRate": 2
+		},
+		"nukelauncherone": {
+			"health": 150,
+			"defence": 15,
+			"movement": 0,
+			"range": 3,
+			"attack": 35,
+			"cost": 10,
+			"hidden": true,
+			"unitAbilities": [
+				"grow",
+				"warfarebuild",
+				"ionize",
+				"splash",
+				"stiff",
+				"static"
+			],
+			"weapon": 5,
+			"promotionLimit": 0,
+			"idx": -1,
+			"prefab": "transportship",
+			"upgradesFrom": "nukelauncher",
+			"growthRate": 2
+		},
+		"nukelaunchertwo": {
+			"health": 200,
+			"defence": 15,
+			"movement": 0,
+			"range": 4,
+			"attack": 40,
+			"cost": 10,
+			"hidden": true,
+			"unitAbilities": [
+				"grow",
+				"warfarebuild",
+				"ionize",
+				"splash",
+				"stiff",
+				"static"
+			],
+			"weapon": 5,
+			"promotionLimit": 0,
+			"idx": -1,
+			"prefab": "transportship",
+			"upgradesFrom": "nukelauncherone",
+			"growthRate": 2
+		},
+		"nukelauncherfinal": {
+			"health": 200,
+			"defence": 20,
+			"movement": 0,
+			"range": 4,
+			"attack": 45,
+			"cost": 10,
+			"hidden": true,
+			"unitAbilities": [
+				"warfarebuild",
+				"ionize",
+				"splash",
+				"stiff",
+				"static"
+			],
+			"weapon": 5,
+			"promotionLimit": 0,
+			"idx": -1,
+			"prefab": "transportship",
+			"upgradesFrom": "nukelaunchertwo",
+			"growthRate": 0
+		},
+		"soldier": {
+			"health": 100,
+			"defence": 20,
+			"movement": 1,
+			"range": 1,
+			"attack": 20,
+			"cost": 2,
+			"unitAbilities": [
+				"dash",
+				"fortify",
+				"land"
+			],
+			"weapon": 5,
+			"promotionLimit": 3,
+			"idx": -1,
+			"prefab": "warrior"
+		},
+		"artillerist": {
+			"health": 100,
+			"defence": 10,
+			"movement": 1,
+			"range": 2,
+			"attack": 20,
+			"cost": 3,
+			"unitAbilities": [
+				"dash",
+				"fortify",
+				"land"
+			],
+			"weapon": 5,
+			"promotionLimit": 3,
+			"idx": -1,
+			"prefab": "warrior"
+		},
+		"truck": {
+			"health": 100,
+			"defence": 10,
+			"movement": 2,
+			"range": 1,
+			"attack": 20,
+			"cost": 3,
+			"unitAbilities": [
+				"dash",
+				"escape",
+				"fortify",
+				"land"
+			],
+			"weapon": 16,
+			"promotionLimit": 3,
+			"idx": -1,
+			"prefab": "transportship"
+		},
+		"helicopter": {
+			"health": 100,
+			"defence": 0,
+			"movement": 3,
+			"range": 1,
+			"attack": 35,
+			"cost": 8,
+			"unitAbilities": [
+				"dash",
+				"persist",
+				"fly"
+			],
+			"weapon": 16,
+			"promotionLimit": 3,
+			"idx": -1,
+			"prefab": "transportship"
+		},
+		"cutter": {
+			"health": 100,
+			"defence": 10,
+			"movement": 3,
+			"range": 2,
+			"attack": 20,
+			"cost": 5,
+			"hidden": true,
+			"upgradesFrom": "transportship",
+			"unitAbilities": [
+				"dash",
+				"carry",
+				"swim",
+				"scout",
+				"water",
+				"static"
+			],
+			"weapon": 3,
+			"promotionLimit": 0,
+			"idx": -1,
+			"prefab": "transportship"
+		},
+		"assaultboat": {
+			"health": 100,
+			"movement": 3,
+			"range": 1,
+			"defence": 30,
+			"attack": 30,
+			"cost": 5,
+			"hidden": true,
+			"upgradesFrom": "transportship",
+			"unitAbilities": [
+				"dash",
+				"swim",
+				"carry",
+				"water",
+				"static"
+			],
+			"weapon": 16,
+			"promotionLimit": 0,
+			"idx": -1,
+			"prefab": "transportship"
+		},
+		"submarine": {
+			"health": 100,
+			"defence": 20,
+			"movement": 2,
+			"range": 3,
+			"attack": 30,
+			"cost": 15,
+			"hidden": true,
+			"upgradesFrom": "transportship",
+			"unitAbilities": [
+				"carry",
+				"swim",
+				"splash",
+				"stiff",
+				"water",
+				"static"
+			],
+			"weapon": 5,
+			"promotionLimit": 0,
+			"idx": -1,
+			"prefab": "transportship"
+		},
+		"tank": {
+			"health": 150,
+			"defence": 30,
+			"movement": 1,
+			"range": 1,
+			"attack": 30,
+			"cost": 5,
+			"unitAbilities": [
+				"dash",
+				"land"
+			],
+			"weapon": 5,
+			"promotionLimit": 3,
+			"idx": -1,
+			"prefab": "transportship"
+		},
+		"missilelauncher": {
+			"health": 100,
+			"defence": 10,
+			"movement": 1,
+			"range": 3,
+			"attack": 30,
+			"cost": 8,
+			"weapon": 5,
+			"unitAbilities": [
+				"splash",
+				"land"
+			],
+			"promotionLimit": 3,
+			"idx": -1,
+			"prefab": "catapult"
+		},
+		"fighterjet": {
+			"health": 150,
+			"defence": 10,
+			"movement": 2,
+			"range": 2,
+			"attack": 45,
+			"cost": 10,
+			"hidden": true,
+			"unitAbilities": [
+				"dash",
+				"escape",
+				"fly",
+				"static"
+			],
+			"weapon": 8,
+			"promotionLimit": 0,
+			"idx": -1,
+			"prefab": "transportship"
+		}
+	},
+	"resourceData": {
+		"oil": {
+			"idx": -1,
+			"resourceTerrainRequirements": [
+				"forest"
+			]
+		}
+	},
+	"skinData": {},
+	"improvementAbility": {}
+}

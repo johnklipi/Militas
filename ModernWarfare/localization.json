@@ -1,0 +1,213 @@
+{
+	"tribes_warfare": {
+		"English": "Militas"
+	},
+	"tribes_warfare_info": {
+		"English": "{0} brings modern warfare to Poytopia with guns, tanks, and nukes.",
+		"Russian": "{0}"
+	},
+	"tribes_warfare_info2": {
+		"English": "{0} starts the game with the '{1}' tech.",
+		"Russian": "Племя {0} начинает игру с технологией '{1}'."
+	},
+	"technology_names_fossilfuels": {
+		"English": "Fossil Fuels",
+		"Russian": "Ископаемые Топлива"
+	},
+	"technology_names_fracking": {
+		"English": "Fracking",
+		"Russian": "Фрекинг"
+	},
+	"technology_names_refining": {
+		"English": "Refining",
+		"Russian": "Переработка"
+	},
+	"technology_names_ballistics": {
+		"English": "Ballistics",
+		"Russian": "Баллистика"
+	},
+	"technology_names_guerillatactics": {
+		"English": "Guerilla Warfare",
+		"Russian": "Партизанская Тактика"
+	},
+	"technology_names_motorized": {
+		"English": "Motorized",
+		"Russian": "Грузовики"
+	},
+	"technology_names_logistics": {
+		"English": "Logistics",
+		"Russian": "Логистика"
+	},
+	"technology_names_rotocraft": {
+		"English": "Rotocraft",
+		"Russian": "Вертолёты"
+	},
+	"technology_names_capitalism": {
+		"English": "Capitalism",
+		"Russian": "Капитализм"
+	},
+	"technology_names_martiallaw": {
+		"English": "Martial Law",
+		"Russian": "Военное Положение"
+	},
+	"technology_names_nuclearwar": {
+		"English": "Nuclear War",
+		"Russian": "Ядерные Технологии"
+	},
+	"technology_names_tankproduction": {
+		"English": "Manufacturing",
+		"Russian": "Производство"
+	},
+	"technology_names_genevaconvention": {
+		"English": "Geneva Convention",
+		"Russian": "Женевская Конвенция"
+	},
+	"technology_names_medicine": {
+		"English": "Medicine",
+		"Russian": "Медицина"
+	},
+	"technology_names_naval": {
+		"English": "Naval",
+		"Russian": "Катера"
+	},
+	"technology_names_submarines": {
+		"English": "Submarines",
+		"Russian": "Подводные Лодки"
+	},
+	"technology_names_coastguard": {
+		"English": "Coast Guard",
+		"Russian": "Береговая Охрана"
+	},
+	"technology_names_fastfood": {
+		"English": "Fast Food",
+		"Russian": "Фаст Фуд"
+	},
+	"technology_names_warfarefarming": {
+		"English": "Greenhouses",
+		"Russian": "Теплицы"
+	},
+	"resource_names_oil": {
+		"English": "Oil",
+		"Russian": "Нефть"
+	},
+	"building_names_facility": {
+		"English": "Facility",
+		"Russian": "Военное Предприятие"
+	},
+	"building_names_refinary": {
+		"English": "Refinary",
+		"Russian": "Нефтеперерабатывающий Завод"
+	},
+	"building_names_cafeteria": {
+		"English": "Cafeteria",
+		"Russian": "Столовая"
+	},
+	"building_names_shop": {
+		"English": "Shop",
+		"Russian": "Магазин"
+	},
+	"building_names_greenhouse": {
+		"English": "Greenhouse",
+		"Russian": "Теплица"
+	},
+	"building_names_oilcollecting": {
+		"English": "Drill",
+		"Russian": "Добыть"
+	},
+	"building_names_derrick": {
+		"English": "Derrick",
+		"Russian": "Нефтевая Вышка"
+	},
+	"building_names_nukefacility": {
+		"English": "Nuke Launcher",
+		"Russian": "Запускатель Ядерной Бомбы"
+	},
+	"unit_abilities_warfarebuild": {
+		"English": "BUILD",
+		"Russian": "ПОСТРОЕНЫЙ"
+	},
+	"tooltip_ability_warfarebuild": {
+		"English": "This unit can be built on tiles, but cant move.",
+		"Russian": "Этот отряд можно построить на клетках, но он не может перемещаться."
+	},
+	"unit_abilities_ionize": {
+		"English": "IONIZE",
+		"Russian": "ИОНИЗИРОВАТЬ"
+	},
+	"tooltip_ability_ionize": {
+		"English": "Irradiates enemies with ionizing radiation when attacking. Ionized units lose half of their attack strength.",
+		"Russian": "Облучает врагов ионизирующим излучением при атаке. Ионизированные юниты теряют половину своей силы атаки."
+	},
+	"unit_names_nukelauncher": {
+		"English": "Nuke Launcher (Level 1)",
+		"Russian": "Запускатель Ядерной Бомбы"
+	},
+	"unit_names_nukelauncherone": {
+		"English": "Nuke Launcher (Level 2)",
+		"Russian": "Запускатель Ядерной Бомбы"
+	},
+	"unit_names_nukelaunchertwo": {
+		"English": "Nuke Launcher (Level 3)",
+		"Russian": "Запускатель Ядерной Бомбы"
+	},
+	"unit_names_nukelauncherfinal": {
+		"English": "Nuke Launcher (Level 4)",
+		"Russian": "Запускатель Ядерной Бомбы"
+	},
+	"unit_names_soldier": {
+		"English": "Soldier",
+		"Russian": "Солдат"
+	},
+	"unit_names_artillerist": {
+		"English": "Artillerist",
+		"Russian": "Артиллерист"
+	},
+	"unit_names_truck": {
+		"English": "Truck",
+		"Russian": "Грузовик"
+	},
+	"unit_names_helicopter": {
+		"English": "Helicopter",
+		"Russian": "Вертолёт"
+	},
+	"unit_names_cutter": {
+		"English": "Cutter",
+		"Russian": "Катер"
+	},
+	"unit_names_submarine": {
+		"English": "Submarine",
+		"Russian": "Подводная Лодка"
+	},
+	"unit_names_assaultboat": {
+		"English": "Assaultboat",
+		"Russian": "Боевая Лодка"
+	},
+	"unit_names_fighterjet": {
+		"English": "Fighter Jet",
+		"Russian": "Истребитель"
+	},
+	"unit_names_missilelauncher": {
+		"English": "Missile Launcher",
+		"Russian": "Ракетная Установка"
+	},
+	"unit_names_tank": {
+		"English": "Tank",
+		"Russian": "Танк"
+	},
+	"unit_names_medic": {
+		"English": "Medic",
+		"Russian": "Медик"
+	},
+	"actionbox_unit_ionized": {
+		"English": "Ionized",
+		"Russian": "Ionized"
+	},
+	"unit_abilities_autoheal": {
+		"English": "AUTO HEAL",
+		"Russian": "АВТО ИСЦЕЛЕНИЕ"
+	},
+	"tooltip_ability_autoheal": {
+		"English": "This unit heals surrounding allied units when moving.",
+		"EngliRussiansh": "Этот отряд лечит все союзные отряды вокруг после движения."
+	}
+}
