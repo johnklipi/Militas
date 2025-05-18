@@ -4,77 +4,81 @@
 	},
 	"tribes_warfare_info": {
 		"English": "{0} brings modern warfare to Poytopia with guns, tanks, and nukes.",
-		"Russian": "{0}"
+		"Russian": "{0} привносит современное оружие в Политопию такое как пушки, танки и ядерные бомбы."
 	},
 	"tribes_warfare_info2": {
-		"English": "{0} starts the game with the '{1}' tech.",
-		"Russian": "Племя {0} начинает игру с технологией '{1}'."
+		"English": "{0} starts the game with the 'Fossil Fuels' tech.",
+		"Russian": "Племя {0} начинает игру с технологией 'Ископаемые Топлива'."
 	},
 	"technology_names_fossilfuels": {
 		"English": "Fossil Fuels",
 		"Russian": "Ископаемые Топлива"
 	},
-	"technology_names_fracking": {
+	"technology_names_hunting__warfare": {
+		"English": "Fossil Fuels",
+		"Russian": "Ископаемые Топлива"
+	},
+	"technology_names_forestry__warfare": {
 		"English": "Fracking",
 		"Russian": "Фрекинг"
 	},
-	"technology_names_refining": {
+	"technology_names_mathematics__warfare": {
 		"English": "Refining",
 		"Russian": "Переработка"
 	},
-	"technology_names_ballistics": {
+	"technology_names_archery__warfare": {
 		"English": "Ballistics",
 		"Russian": "Баллистика"
 	},
-	"technology_names_guerillatactics": {
+	"technology_names_spiritualism__warfare": {
 		"English": "Guerilla Warfare",
 		"Russian": "Партизанская Тактика"
 	},
-	"technology_names_motorized": {
+	"technology_names_riding__warfare": {
 		"English": "Motorized",
 		"Russian": "Грузовики"
 	},
-	"technology_names_logistics": {
+	"technology_names_freespirit__warfare": {
 		"English": "Logistics",
 		"Russian": "Логистика"
 	},
-	"technology_names_rotocraft": {
+	"technology_names_chivalry__warfare": {
 		"English": "Rotocraft",
 		"Russian": "Вертолёты"
 	},
-	"technology_names_capitalism": {
+	"technology_names_trade__warfare": {
 		"English": "Capitalism",
 		"Russian": "Капитализм"
 	},
-	"technology_names_martiallaw": {
+	"technology_names_strategy__warfare": {
 		"English": "Martial Law",
 		"Russian": "Военное Положение"
 	},
-	"technology_names_nuclearwar": {
+	"technology_names_diplomacy__warfare": {
 		"English": "Nuclear War",
 		"Russian": "Ядерные Технологии"
 	},
-	"technology_names_tankproduction": {
+	"technology_names_smithery__warfare": {
 		"English": "Manufacturing",
 		"Russian": "Производство"
 	},
-	"technology_names_genevaconvention": {
+	"technology_names_meditation__warfare": {
 		"English": "Geneva Convention",
 		"Russian": "Женевская Конвенция"
 	},
-	"technology_names_medicine": {
+	"technology_names_philosophy__warfare": {
 		"English": "Medicine",
 		"Russian": "Медицина"
 	},
-	"technology_names_naval": {
+	"technology_names_sailing__warfare": {
 		"English": "Naval",
 		"Russian": "Катера"
 	},
-	"technology_names_submarines": {
+	"technology_names_navigation__warfare": {
 		"English": "Submarines",
 		"Russian": "Подводные Лодки"
 	},
-	"technology_names_coastguard": {
+	"technology_names_ramming__warfare": {
 		"English": "Coast Guard",
 		"Russian": "Береговая Охрана"
 	},
@@ -82,7 +86,7 @@
 		"English": "Fast Food",
 		"Russian": "Фаст Фуд"
 	},
-	"technology_names_warfarefarming": {
+	"technology_names_farming__warfare": {
 		"English": "Greenhouses",
 		"Russian": "Теплицы"
 	},
@@ -127,8 +131,8 @@
 		"Russian": "ПОСТРОЕНЫЙ"
 	},
 	"tooltip_ability_warfarebuild": {
-		"English": "This unit can be built on tiles, but cant move.",
-		"Russian": "Этот отряд можно построить на клетках, но он не может перемещаться."
+		"English": "This unit can be built on tiles.",
+		"Russian": "Этот отряд можно построить на клетках."
 	},
 	"unit_abilities_ionize": {
 		"English": "IONIZE",
@@ -140,19 +144,19 @@
 	},
 	"unit_names_nukelauncher": {
 		"English": "Nuke Launcher (Level 1)",
-		"Russian": "Запускатель Ядерной Бомбы"
+		"Russian": "Ядерная Шахта (Уровень 1)"
 	},
 	"unit_names_nukelauncherone": {
 		"English": "Nuke Launcher (Level 2)",
-		"Russian": "Запускатель Ядерной Бомбы"
+		"Russian": "Ядерная Шахта (Уровень 2)"
 	},
 	"unit_names_nukelaunchertwo": {
 		"English": "Nuke Launcher (Level 3)",
-		"Russian": "Запускатель Ядерной Бомбы"
+		"Russian": "Ядерная Шахта (Уровень 3)"
 	},
 	"unit_names_nukelauncherfinal": {
-		"English": "Nuke Launcher (Level 4)",
-		"Russian": "Запускатель Ядерной Бомбы"
+		"English": "Nuke Launcher (Max Level)",
+		"Russian": "Ядерная Шахта (Максимальный Уровень)"
 	},
 	"unit_names_soldier": {
 		"English": "Soldier",
@@ -200,7 +204,7 @@
 	},
 	"actionbox_unit_ionized": {
 		"English": "Ionized",
-		"Russian": "Ionized"
+		"Russian": "Облучённый"
 	},
 	"unit_abilities_autoheal": {
 		"English": "AUTO HEAL",
@@ -209,5 +213,13 @@
 	"tooltip_ability_autoheal": {
 		"English": "This unit heals surrounding allied units when moving.",
 		"EngliRussiansh": "Этот отряд лечит все союзные отряды вокруг после движения."
+	},
+	"unit_abilities_turbinedrag": {
+		"English": "TURBINE DRAG",
+		"Russian": "ТУРБИННОЕ СОПРОТИВЛЕНИЕ"
+	},
+	"tooltip_ability_turbinedrag": {
+		"English": "This unit loses 20% of its attack power when on water.",
+		"EngliRussiansh": "Этот отряд теряет 20% мощности своей аттаки когда находится на воде."
 	}
 }

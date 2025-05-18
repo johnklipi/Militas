@@ -5,7 +5,8 @@
 			"language": "mos,kva,ber,lin,lon,don,pa,ris,to,kyo,rom,e,war,saw,man,il,la,pea,rl,har,bor,sin,ga,pore,dre,sden",
 			"startingTech": [
 				"basic",
-				"fossilfuels"
+				"fossilfuels",
+				"militasbasic"
 			],
 			"resourceModifier": {
 				"crop": 0
@@ -18,31 +19,30 @@
 			"bonus": 0,
 			"startingUnit": "soldier",
 			"techOverrides": {
-				"hunting": "fossilfuels",
-				"forestry": "fracking",
-				"mathematics": "refining",
-				"archery": "ballistics",
-				"spiritualism": "guerillatactics",
-				"riding": "motorized",
-				"freespirit": "logistics",
-				"chivalry": "rotocraft",
-				"trade": "capitalism",
-				"shields": "martiallaw",
-				"diplomacy": "nuclearwar",
-				"smithery": "tankproduction",
-				"meditation": "genevaconvention",
-				"philosophy": "medicine",
-				"sailing": "naval",
-				"navigation": "submarines",
-				"ramming": "coastguard",
-				"construction": "fastfood",
-				"farming": "warfarefarming"
+				"hunting": "fossilfuels"
 			},
 			"unitOverrides": {
 				"warrior": "soldier",
 				"giant": "fighterjet",
 				"rammership": "assaultboat",
-				"swordsman": "tank"
+				"scoutship": "cutter",
+				"bombership": "submarine",
+				"archer": "artillerist",
+				"knight": "helicopter",
+				"rider": "truck",
+				"catapult": "missilelauncher",
+				"swordsman": "tank",
+				"mindbender": "medic",
+				"cloak": "none"
+			},
+			"improvementOverrides": {
+				"nukeholder": "nukefacility",
+				"lumberhut": "derrick",
+				"farm": "greenhouse",
+				"forge": "facility",
+				"windmill": "cafeteria",
+				"sawmill": "refinary",
+				"market": "shop"
 			},
 			"startingResource": [
 				"oil"
@@ -224,14 +224,16 @@
 			],
 			"idx": -1
 		},
+		"nukeholder": {
+			"hidden": true,
+			"maxLevel": 0,
+			"idx": -1
+		},
 		"oilcollecting": {
 			"cost": 2,
 			"terrainRequirements": [
 				{
 					"resource": "oil"
-				},
-				{
-					"resource": "game"
 				}
 			],
 			"improvementAbilities": [
@@ -364,6 +366,24 @@
 		}
 	},
 	"techData": {
+		"fossilfuels": {
+			"techUnlocks": [
+				"archery",
+				"forestry"
+			],
+			"improvementUnlocks": [
+				"oilcollecting"
+			],
+			"cost": 1,
+			"idx": -1
+		},
+		"militasbasic": {
+			"improvementUnlocks": [
+				"hunting"
+			],
+			"cost": 0,
+			"idx": -1
+		},
 		"basic": {
 			"unitUnlocks": [
 				"giant",
@@ -380,213 +400,10 @@
 				"nukelauncherfinal"
 			]
 		},
-		"fossilfuels": {
-			"techUnlocks": [
-				"archery",
-				"forestry"
-			],
+		"diplomacy": {
 			"improvementUnlocks": [
-				"oilcollecting"
-			],
-			"cost": 1,
-			"idx": -1
-		},
-		"fracking": {
-			"techUnlocks": [
-				"mathematics"
-			],
-			"improvementUnlocks": [
-				"derrick",
-				"clearforest"
-			],
-			"cost": 2,
-			"idx": -1
-		},
-		"refining": {
-			"improvementUnlocks": [
-				"refinary"
-			],
-			"unitUnlocks": [
-				"missilelauncher"
-			],
-			"cost": 3,
-			"idx": -1
-		},
-		"ballistics": {
-			"techUnlocks": [
-				"spiritualism"
-			],
-			"unitUnlocks": [
-				"artillerist"
-			],
-			"defenceBonusUnlocks": {
-				"forest": 15
-			},
-			"cost": 2,
-			"idx": -1
-		},
-		"guerillatactics": {
-			"improvementUnlocks": [
-				"growforest",
-				"foresttemple"
-			],
-			"cost": 3,
-			"idx": -1
-		},
-		"motorized": {
-			"techUnlocks": [
-				"roads",
-				"freespirit"
-			],
-			"unitUnlocks": [
-				"truck"
-			],
-			"cost": 1,
-			"idx": -1
-		},
-		"logistics": {
-			"techUnlocks": [
-				"chivalry"
-			],
-			"improvementUnlocks": [
-				"temple"
-			],
-			"abilityUnlocks": [
-				"disband"
-			],
-			"cost": 2,
-			"idx": -1
-		},
-		"rotocraft": {
-			"abilityUnlocks": [
-				"destroy"
-			],
-			"unitUnlocks": [
-				"helicopter"
-			],
-			"cost": 3,
-			"idx": -1
-		},
-		"capitalism": {
-			"improvementUnlocks": [
-				"shop"
-			],
-			"cost": 3,
-			"taskUnlocks": [
-				"wealth"
-			],
-			"idx": -1
-		},
-		"martiallaw": {
-			"techUnlocks": [
-				"diplomacy"
-			],
-			"unitUnlocks": [
-				"defender"
-			],
-			"abilityUnlocks": [
-				"peacetreaty"
-			],
-			"cost": 2,
-			"idx": -1
-		},
-		"nuclearwar": {
-			"idx": -1,
-			"cost": 3,
-			"abilityUnlocks": [
-				"embassy",
-				"capitalvision"
-			],
-			"improvementUnlocks": [
-				"nukefacility"
+				"nukeholder"
 			]
-		},
-		"tankproduction": {
-			"improvementUnlocks": [
-				"facility"
-			],
-			"unitUnlocks": [
-				"tank"
-			],
-			"cost": 3,
-			"idx": -1
-		},
-		"genevaconvention": {
-			"techUnlocks": [
-				"philosophy"
-			],
-			"improvementUnlocks": [
-				"mountaintemple"
-			],
-			"cost": 2,
-			"taskUnlocks": [
-				"pacifist"
-			],
-			"idx": -1
-		},
-		"medicine": {
-			"unitUnlocks": [
-				"medic"
-			],
-			"abilityUnlocks": [
-				"literacy"
-			],
-			"cost": 3,
-			"taskUnlocks": [
-				"genius"
-			],
-			"idx": -1
-		},
-		"naval": {
-			"techUnlocks": [
-				"navigation"
-			],
-			"unitUnlocks": [
-				"cutter"
-			],
-			"movementUnlocks": {
-				"ocean": 1
-			},
-			"cost": 2,
-			"idx": -1
-		},
-		"submarines": {
-			"unitUnlocks": [
-				"submarine"
-			],
-			"improvementUnlocks": [
-				"starfishing"
-			],
-			"cost": 3,
-			"idx": -1
-		},
-		"coastguard": {
-			"techUnlocks": [
-				"aquatism"
-			],
-			"unitUnlocks": [
-				"assaultboat"
-			],
-			"cost": 2,
-			"idx": -1
-		},
-		"fastfood": {
-			"improvementUnlocks": [
-				"cafeteria",
-				"burnforest"
-			],
-			"cost": 3,
-			"idx": -1
-		},
-		"warfarefarming": {
-			"techUnlocks": [
-				"construction"
-			],
-			"improvementUnlocks": [
-				"greenhouse"
-			],
-			"cost": 2,
-			"idx": -1
 		}
 	},
 	"unitAbility": {
@@ -594,6 +411,9 @@
 			"idx": -1
 		},
 		"ionize": {
+			"idx": -1
+		},
+		"turbinedrag": {
 			"idx": -1
 		}
 	},
@@ -618,6 +438,28 @@
 		},
 		"nukelauncher": {
 			"health": 100,
+			"defence": 0,
+			"movement": 0,
+			"range": 3,
+			"attack": 25,
+			"cost": 10,
+			"hidden": true,
+			"unitAbilities": [
+				"grow",
+				"warfarebuild",
+				"ionize",
+				"splash",
+				"stiff",
+				"static"
+			],
+			"weapon": 5,
+			"promotionLimit": 0,
+			"idx": -1,
+			"prefab": "transportship",
+			"growthRate": 2
+		},
+		"nukelauncherone": {
+			"health": 100,
 			"defence": 10,
 			"movement": 0,
 			"range": 3,
@@ -636,37 +478,15 @@
 			"promotionLimit": 0,
 			"idx": -1,
 			"prefab": "transportship",
-			"growthRate": 2
-		},
-		"nukelauncherone": {
-			"health": 150,
-			"defence": 15,
-			"movement": 0,
-			"range": 3,
-			"attack": 35,
-			"cost": 10,
-			"hidden": true,
-			"unitAbilities": [
-				"grow",
-				"warfarebuild",
-				"ionize",
-				"splash",
-				"stiff",
-				"static"
-			],
-			"weapon": 5,
-			"promotionLimit": 0,
-			"idx": -1,
-			"prefab": "transportship",
 			"upgradesFrom": "nukelauncher",
 			"growthRate": 2
 		},
 		"nukelaunchertwo": {
-			"health": 200,
-			"defence": 15,
+			"health": 150,
+			"defence": 10,
 			"movement": 0,
-			"range": 4,
-			"attack": 40,
+			"range": 3,
+			"attack": 35,
 			"cost": 10,
 			"hidden": true,
 			"unitAbilities": [
@@ -686,10 +506,10 @@
 		},
 		"nukelauncherfinal": {
 			"health": 200,
-			"defence": 20,
+			"defence": 10,
 			"movement": 0,
 			"range": 4,
-			"attack": 45,
+			"attack": 40,
 			"cost": 10,
 			"hidden": true,
 			"unitAbilities": [
@@ -768,7 +588,8 @@
 			"unitAbilities": [
 				"dash",
 				"persist",
-				"fly"
+				"fly",
+				"turbinedrag"
 			],
 			"weapon": 16,
 			"promotionLimit": 3,
