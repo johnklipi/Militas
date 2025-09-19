@@ -4,6 +4,7 @@ using HarmonyLib;
 using Polytopia.Data;
 using Steamworks;
 using UnityEngine;
+using PolytopiaBackendBase.Common;
 
 namespace ModernWarfare;
 
@@ -271,9 +272,9 @@ public static class Main
 
     [HarmonyPostfix]
     [HarmonyPatch(typeof(GameSettings), nameof(GameSettings.GetSelectedSkin))]
-    private static void GameSettings_GetSelectedSkin(ref SkinType __result, GameSettings __instance, TribeData.Type tribeType)
+    private static void GameSettings_GetSelectedSkin(ref SkinType __result, GameSettings __instance, TribeType tribeType)
     {
-        if (tribeType == EnumCache<TribeData.Type>.GetType("warfare") && __result == SkinType.Default)
+        if (tribeType == EnumCache<TribeType>.GetType("warfare") && __result == SkinType.Default)
         {
             __result = EnumCache<SkinType>.GetType("warfare");
         }
@@ -283,7 +284,7 @@ public static class Main
     [HarmonyPatch(typeof(SelectTribePopup), nameof(SelectTribePopup.Button_OnClicked))]
     private static bool Button_OnClicked(SelectTribePopup __instance, ref SkinType type, UIRoundButton button)
     {
-        if (__instance.tribeData.type == EnumCache<TribeData.Type>.GetType("warfare") && type == SkinType.Default)
+        if (__instance.tribeData.type == EnumCache<TribeType>.GetType("warfare") && type == SkinType.Default)
         {
             type = EnumCache<SkinType>.GetType("warfare");
         }
