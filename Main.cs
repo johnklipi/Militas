@@ -1,8 +1,6 @@
-﻿using System.Linq;
-using BepInEx.Logging;
+﻿using BepInEx.Logging;
 using HarmonyLib;
 using Polytopia.Data;
-using Steamworks;
 using UnityEngine;
 using PolytopiaBackendBase.Common;
 
@@ -235,9 +233,7 @@ public static class Main
             TileData tile = gameState.Map.GetTile(unitState.coordinates);
             if (tile.IsWater)
             {
-                Console.Write(__result);
                 __result = Math.Max(0, __result - 70);
-                Console.Write(__result);
             }
         }
         if (unitState.HasEffect(EnumCache<UnitEffect>.GetType("ionized")))
@@ -317,7 +313,12 @@ public static class Main
     {
         if (name == "world.unit.attack")
         {
-            __instance.attackBonus = (float)__instance.unit.UnitState.GetAttack(GameManager.GameState) / (float)__instance.unit.UnitData.GetAttack();
+            int firstAttack = __instance.unit.UnitData.GetAttack();
+            if (__instance.unit.UnitState != null)
+            {
+                firstAttack = __instance.unit.UnitState.GetAttack(GameManager.GameState);
+            }
+            __instance.attackBonus = (float)firstAttack / (float)__instance.unit.UnitData.GetAttack();
             value = (__instance.attackBonus != 1f) ? string.Format("{0} (x{1})", (float)__instance.data.attack * 0.1f, __instance.attackBonus) : ((float)__instance.data.attack * 0.1f).ToString();
         }
         return true;

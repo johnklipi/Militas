@@ -2,7 +2,7 @@
 	"tribeData": {
 		"warfare": {
 			"color": 6381921,
-			"language": "mos,kva,ber,lin,lon,don,pa,ris,to,kyo,rom,e,war,saw,man,il,la,pea,rl,har,bor,sin,ga,pore,dre,sden",
+			"language": "dra,kar,ven,kol,bur,kran,mar,rok,skar,gral,bast,kren,frak,volt,krim,scor,takt,blak,fort,an,ur,os,en,al,or",
 			"startingTech": [
 				"basic",
 				"fossilfuels",
