@@ -9,21 +9,17 @@ namespace ModernWarfare;
 public static class Main
 {
     private static ManualLogSource? modLogger;
-    private static bool doStuff = false;
     public static void Load(ManualLogSource logger)
     {
         PolyMod.Loader.AddPatchDataType("unitEffect", typeof(UnitEffect));
-        EnumCache<SkinType>.AddMapping("warfare", (SkinType)PolyMod.Registry.autoidx);
-        EnumCache<SkinType>.AddMapping("warfare", (SkinType)PolyMod.Registry.autoidx);
         PolyMod.Registry.autoidx++;
         Harmony.CreateAndPatchAll(typeof(Main));
         modLogger = logger;
-
     }
 
     [HarmonyPostfix]
     [HarmonyPatch(typeof(MapGenerator), nameof(MapGenerator.addStartingResourcesToCapital))]
-    private static void MapGenerator_AddStartingResourcesToCapital(MapData map, GameState gameState, PlayerState player, ResourceData startingResource, int minResourcesCount = 2)
+    private static void MapGenerator_AddStartingResourcesToCapital(MapData map, GameState gameState, PlayerState player, Il2CppSystem.Collections.Generic.List<ResourceData> startingResources, int minResourcesCount)
     {
         TileData tile = gameState.Map.GetTile(player.startTile);
         PlayerState playerState;
@@ -267,37 +263,6 @@ public static class Main
     }
 
     [HarmonyPostfix]
-    [HarmonyPatch(typeof(GameSettings), nameof(GameSettings.GetSelectedSkin))]
-    private static void GameSettings_GetSelectedSkin(ref SkinType __result, GameSettings __instance, TribeType tribeType)
-    {
-        if (tribeType == EnumCache<TribeType>.GetType("warfare") && __result == SkinType.Default)
-        {
-            __result = EnumCache<SkinType>.GetType("warfare");
-        }
-    }
-
-    [HarmonyPrefix]
-    [HarmonyPatch(typeof(SelectTribePopup), nameof(SelectTribePopup.Button_OnClicked))]
-    private static bool Button_OnClicked(SelectTribePopup __instance, ref SkinType type, UIRoundButton button)
-    {
-        if (__instance.tribeData.type == EnumCache<TribeType>.GetType("warfare") && type == SkinType.Default)
-        {
-            type = EnumCache<SkinType>.GetType("warfare");
-        }
-        return true;
-    }
-
-    [HarmonyPostfix]
-    [HarmonyPatch(typeof(SelectTribePopup), nameof(SelectTribePopup.SetOpinionButton))]
-	private static void SetOpinionButton(SelectTribePopup __instance)
-	{
-		if (__instance.SkinType == EnumCache<SkinType>.GetType("warfare"))
-		{
-			__instance.uiTextButton.gameObject.SetActive(false);
-		}
-	}
-
-    [HarmonyPostfix]
     [HarmonyPatch(typeof(UnitDataExtensions), nameof(UnitDataExtensions.CanRecover))]
     public static void UnitDataExtensions_CanRecover(ref bool __result, UnitState unitState, GameState state)
     {
@@ -311,17 +276,27 @@ public static class Main
     [HarmonyPatch(typeof(UnitPopup), nameof(UnitPopup.AddStatsRow), typeof(string), typeof(string))]
     private static bool AddStatsRow(UnitPopup __instance, string name, ref string value)
     {
-        if (name == "world.unit.attack")
+        if (name == "world.unit.attack" && __instance.unit != null && __instance.unit.UnitState != null)
         {
-            int firstAttack = __instance.unit.UnitData.GetAttack();
-            if (__instance.unit.UnitState != null)
-            {
-                firstAttack = __instance.unit.UnitState.GetAttack(GameManager.GameState);
-            }
+            int firstAttack = __instance.unit.UnitState.GetAttack(GameManager.GameState);
             __instance.attackBonus = (float)firstAttack / (float)__instance.unit.UnitData.GetAttack();
             value = (__instance.attackBonus != 1f) ? string.Format("{0} (x{1})", (float)__instance.data.attack * 0.1f, __instance.attackBonus) : ((float)__instance.data.attack * 0.1f).ToString();
         }
         return true;
+    }
+
+    [HarmonyPostfix]
+    [HarmonyPatch(typeof(TechData), nameof(TechData.displayName), MethodType.Getter)]
+    private static void TechData_displayName(ref string __result, TechData __instance)
+    {
+        if(GameManager.Instance.isLevelLoaded && GameManager.GameState.TryGetPlayer(GameManager.GameState.CurrentPlayer, out PlayerState playerState))
+        {
+            string tribedName = __result + "_" + EnumCache<TribeType>.GetName(playerState.tribe).ToLower();
+            if(Localization.Get(tribedName, new Il2CppSystem.Object[]{}) != tribedName)
+            {
+                __result = tribedName;
+            }
+        }
     }
 
     private static void DeionizeUnit(TileData tileData)

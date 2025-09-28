@@ -45,6 +45,7 @@
 				"market": "shop"
 			},
 			"startingResource": [
+				"oil",
 				"oil"
 			],
 			"tribeAbilities": [
@@ -386,18 +387,10 @@
 		},
 		"basic": {
 			"unitUnlocks": [
-				"giant",
-				"bunny",
-				"scout",
-				"transportship",
-				"warrior",
-				"babydragon",
-				"firedragon",
-				"dagger",
-				"nukelauncher",
-				"nukelauncherone",
-				"nukelaunchertwo",
-				"nukelauncherfinal"
+				"+nukelauncher",
+				"+nukelauncherone",
+				"+nukelaunchertwo",
+				"+nukelauncherfinal"
 			]
 		},
 		"diplomacy": {
@@ -455,7 +448,7 @@
 			"weapon": 5,
 			"promotionLimit": 0,
 			"idx": -1,
-			"prefab": "transportship",
+			"prefab": "warfarenuke",
 			"growthRate": 2
 		},
 		"nukelauncherone": {
@@ -477,7 +470,7 @@
 			"weapon": 5,
 			"promotionLimit": 0,
 			"idx": -1,
-			"prefab": "transportship",
+			"prefab": "warfarenuke",
 			"upgradesFrom": "nukelauncher",
 			"growthRate": 2
 		},
@@ -500,7 +493,7 @@
 			"weapon": 5,
 			"promotionLimit": 0,
 			"idx": -1,
-			"prefab": "transportship",
+			"prefab": "warfarenuke",
 			"upgradesFrom": "nukelauncherone",
 			"growthRate": 2
 		},
@@ -522,7 +515,7 @@
 			"weapon": 5,
 			"promotionLimit": 0,
 			"idx": -1,
-			"prefab": "transportship",
+			"prefab": "warfarenuke",
 			"upgradesFrom": "nukelaunchertwo",
 			"growthRate": 0
 		},
@@ -576,7 +569,7 @@
 			"weapon": 16,
 			"promotionLimit": 3,
 			"idx": -1,
-			"prefab": "transportship"
+			"prefab": "warfaretruck"
 		},
 		"helicopter": {
 			"health": 100,
@@ -594,7 +587,7 @@
 			"weapon": 16,
 			"promotionLimit": 3,
 			"idx": -1,
-			"prefab": "transportship"
+			"prefab": "warfarehelicopter"
 		},
 		"cutter": {
 			"health": 100,
@@ -616,7 +609,7 @@
 			"weapon": 3,
 			"promotionLimit": 0,
 			"idx": -1,
-			"prefab": "transportship"
+			"prefab": "warfarecutter"
 		},
 		"assaultboat": {
 			"health": 100,
@@ -637,7 +630,7 @@
 			"weapon": 16,
 			"promotionLimit": 0,
 			"idx": -1,
-			"prefab": "transportship"
+			"prefab": "assaultboat"
 		},
 		"submarine": {
 			"health": 100,
@@ -659,7 +652,7 @@
 			"weapon": 5,
 			"promotionLimit": 0,
 			"idx": -1,
-			"prefab": "transportship"
+			"prefab": "warfaresubmarine"
 		},
 		"tank": {
 			"health": 150,
@@ -675,7 +668,7 @@
 			"weapon": 5,
 			"promotionLimit": 3,
 			"idx": -1,
-			"prefab": "transportship"
+			"prefab": "warfaretank"
 		},
 		"missilelauncher": {
 			"health": 100,
@@ -710,7 +703,7 @@
 			"weapon": 8,
 			"promotionLimit": 0,
 			"idx": -1,
-			"prefab": "transportship"
+			"prefab": "warfarefighterjet"
 		}
 	},
 	"resourceData": {

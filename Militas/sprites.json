@@ -1,9 +1,9 @@
 {
-	"boat_truck__": {
+	"body_truck__": {
 		"pixelsPerUnit": 1584
 	},
-	"boat_truck_outline__": {
-		"pixelsPerUnit": 1270
+	"body_truck_outline__": {
+		"pixelsPerUnit": 1425
 	},
 	"boat_transportship_warfare_": {
 		"pixelsPerUnit": 1056
@@ -11,68 +11,68 @@
 	"boat_transportship_outline_warfare_": {
 		"pixelsPerUnit": 950
 	},
-	"boat_helicopter__": {
+	"body_helicopter__": {
 		"pixelsPerUnit": 792,
 		"pivot": [0.5, 0]
 	},
-	"boat_helicopter_outline__": {
+	"body_helicopter_outline__": {
 		"pixelsPerUnit": 712,
 		"pivot": [0.5, 0]
 	},
-	"boat_submarine__": {
+	"body_submarine__": {
 		"pixelsPerUnit": 792,
 		"pivot": [0.5, 1]
 	},
-	"boat_submarine_outline__": {
+	"body_submarine_outline__": {
 		"pixelsPerUnit": 633,
 		"pivot": [0.5, 1]
 	},
-	"boat_cutter__": {
+	"body_cutter__": {
 		"pixelsPerUnit": 792
 	},
-	"boat_cutter_outline__": {
+	"body_cutter_outline__": {
 		"pixelsPerUnit": 633
 	},
-	"boat_assaultboat__": {
+	"body_assaultbody__": {
 		"pixelsPerUnit": 792
 	},
-	"boat_assaultboat_outline__": {
+	"body_assaultbody_outline__": {
 		"pixelsPerUnit": 633
 	},
-	"boat_tank__": {
+	"body_tank__": {
 		"pixelsPerUnit": 1056
 	},
-	"boat_tank_outline__": {
+	"body_tank_outline__": {
 		"pixelsPerUnit": 950
 	},
-	"boat_fighterjet__": {
+	"body_fighterjet__": {
 		"pixelsPerUnit": 1056
 	},
-	"boat_fighterjet_outline__": {
+	"body_fighterjet_outline__": {
 		"pixelsPerUnit": 845
 	},
-	"boat_nukelauncher__": {
+	"body_nukelauncher__": {
 		"pixelsPerUnit": 1056
 	},
-	"boat_nukelauncher_outline__": {
+	"body_nukelauncher_outline__": {
 		"pixelsPerUnit": 950
 	},
-	"boat_nukelauncherone__": {
+	"body_nukelauncherone__": {
 		"pixelsPerUnit": 1056
 	},
-	"boat_nukelauncherone_outline__": {
+	"body_nukelauncherone_outline__": {
 		"pixelsPerUnit": 950
 	},
-	"boat_nukelaunchertwo__": {
+	"body_nukelaunchertwo__": {
 		"pixelsPerUnit": 1056
 	},
-	"boat_nukelaunchertwo_outline__": {
+	"body_nukelaunchertwo_outline__": {
 		"pixelsPerUnit": 950
 	},
-	"boat_nukelauncherfinal__": {
+	"body_nukelauncherfinal__": {
 		"pixelsPerUnit": 1056
 	},
-	"boat_nukelauncherfinal_outline__": {
+	"body_nukelauncherfinal_outline__": {
 		"pixelsPerUnit": 950
 	},
 	"fruit_warfare_": {
@@ -82,6 +82,9 @@
 	"fruit_outline_warfare_": {
 		"pixelsPerUnit": 855,
 		"pivot": [0.5, 0.4]
+	},
+	"game_outline_warfare_": {
+		"pixelsPerUnit": 1690
 	},
 	"oil__": {
 		"pixelsPerUnit": 1056
