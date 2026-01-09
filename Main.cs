@@ -12,6 +12,7 @@ public static class Main
     public static void Load(ManualLogSource logger)
     {
         PolyMod.Loader.AddPatchDataType("unitEffect", typeof(UnitEffect));
+        PolyMod.Loader.AddPatchDataType("tribeAbility", typeof(TribeAbility.Type));
         PolyMod.Registry.autoidx++;
         Harmony.CreateAndPatchAll(typeof(Main));
         modLogger = logger;
@@ -46,49 +47,34 @@ public static class Main
     [HarmonyPatch(typeof(CaptureCityAction), nameof(CaptureCityAction.ExecuteDefault))]
     private static void CaptureCityAction_ExecuteDefault(CaptureCityAction __instance, GameState gameState)
     {
-        TileData tile = gameState.Map.GetTile(__instance.Coordinates);
-        PlayerState playerState;
-        gameState.TryGetPlayer(__instance.PlayerId, out playerState);
-        if (gameState.GameLogicData.TryGetData(playerState.tribe, out TribeData tribeData))
-        {
-            Il2CppSystem.Collections.Generic.List<TileData> cityAreaSorted = ActionUtils.GetCityAreaSorted(gameState, tile);
-            cityAreaSorted.Reverse();
-            for (int j = 0; j < cityAreaSorted.Count; j++)
-            {
-                TileData tileData2 = cityAreaSorted[j];
-                if (tribeData.tribeAbilities.Contains(EnumCache<TribeAbility.Type>.GetType("oilrefiner")) && tileData2.HasResource(ResourceData.Type.Game))
-                {
-                    gameState.ActionStack.Add(new BuildAction(__instance.PlayerId, EnumCache<ImprovementData.Type>.GetType("createoil"), tileData2.coordinates, false));
-                }
-                else if (!tribeData.tribeAbilities.Contains(EnumCache<TribeAbility.Type>.GetType("oilrefiner")) && tileData2.HasResource(EnumCache<ResourceData.Type>.GetType("oil")))
-                {
-                    gameState.ActionStack.Add(new BuildAction(__instance.PlayerId, EnumCache<ImprovementData.Type>.GetType("creategame"), tileData2.coordinates, false));
-                }
-            }
-        }
+        TurnGameIntoOil(gameState, __instance.Coordinates, __instance.PlayerId);
     }
 
     [HarmonyPostfix]
     [HarmonyPatch(typeof(ExpandCityAction), nameof(ExpandCityAction.ExecuteDefault))]
     private static void ExpandCityAction_ExecuteDefault(ExpandCityAction __instance, GameState state)
     {
-        TileData tile = state.Map.GetTile(__instance.Coordinates);
+        TurnGameIntoOil(state, __instance.Coordinates, __instance.PlayerId);
+    }
+
+    private static void TurnGameIntoOil(GameState gameState, WorldCoordinates coordinates, byte playerId)
+    {
+        TileData tile = gameState.Map.GetTile(coordinates);
         PlayerState playerState;
-        state.TryGetPlayer(__instance.PlayerId, out playerState);
-        if (state.GameLogicData.TryGetData(playerState.tribe, out TribeData tribeData))
+        gameState.TryGetPlayer(playerId, out playerState);
+        if (gameState.GameLogicData.TryGetData(playerState.tribe, out TribeData tribeData))
         {
-            Il2CppSystem.Collections.Generic.List<TileData> cityAreaSorted = ActionUtils.GetCityAreaSorted(state, tile);
-            cityAreaSorted.Reverse();
+            Il2CppSystem.Collections.Generic.List<TileData> cityAreaSorted = ActionUtils.GetCityAreaSorted(gameState, tile);
             for (int j = 0; j < cityAreaSorted.Count; j++)
             {
-                TileData tileData2 = cityAreaSorted[j];
-                if (tribeData.tribeAbilities.Contains(EnumCache<TribeAbility.Type>.GetType("oilrefiner")) && tileData2.HasResource(ResourceData.Type.Game))
+                TileData cityTile = cityAreaSorted[j];
+                if (tribeData.tribeAbilities.Contains(EnumCache<TribeAbility.Type>.GetType("oilrefiner")) && cityTile.HasResource(ResourceData.Type.Game))
                 {
-                    state.ActionStack.Add(new BuildAction(__instance.PlayerId, EnumCache<ImprovementData.Type>.GetType("createoil"), tileData2.coordinates, false));
+                    gameState.ActionStack.Add(new CreateResourceAction(playerId, EnumCache<ResourceData.Type>.GetType("oil"), cityTile.coordinates, CreateResourceAction.CreateReason.None));
                 }
-                else if (!tribeData.tribeAbilities.Contains(EnumCache<TribeAbility.Type>.GetType("oilrefiner")) && tileData2.HasResource(EnumCache<ResourceData.Type>.GetType("oil")))
+                else if (!tribeData.tribeAbilities.Contains(EnumCache<TribeAbility.Type>.GetType("oilrefiner")) && cityTile.HasResource(EnumCache<ResourceData.Type>.GetType("oil")))
                 {
-                    state.ActionStack.Add(new BuildAction(__instance.PlayerId, EnumCache<ImprovementData.Type>.GetType("creategame"), tileData2.coordinates, false));
+                    gameState.ActionStack.Add(new CreateResourceAction(playerId, ResourceData.Type.Game, cityTile.coordinates, CreateResourceAction.CreateReason.None));
                 }
             }
         }
@@ -140,8 +126,8 @@ public static class Main
     }
 
     [HarmonyPostfix]
-    [HarmonyPatch(typeof(Unit), nameof(Unit.UpdateObject), typeof(SkinVisualsTransientData))]
-    private static void Unit_UpdateObject_Postfix(Unit __instance, SkinVisualsTransientData transientSkinData)
+    [HarmonyPatch(typeof(Unit), nameof(Unit.UpdateObject), typeof(MapRenderContext), typeof(SkinVisualsTransientData))]
+    private static void Unit_UpdateObject_Postfix(Unit __instance, MapRenderContext ctx, SkinVisualsTransientData transientSkinData)
     {
         if (__instance.UnitState.HasEffect(EnumCache<UnitEffect>.GetType("ionized")))
         {
