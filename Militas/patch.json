@@ -5,8 +5,8 @@
 			"language": "dra,kar,ven,kol,bur,kran,mar,rok,skar,gral,bast,kren,frak,volt,krim,scor,takt,blak,fort,an,ur,os,en,al,or",
 			"startingTech": [
 				"basic",
-				"fossilfuels",
-				"militasbasic"
+				"militasbasic",
+				"fossilfuels"
 			],
 			"resourceModifier": {
 				"crop": 0

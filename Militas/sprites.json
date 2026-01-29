@@ -24,19 +24,19 @@
 		"pivot": [0.5, 1]
 	},
 	"body_submarine_outline__": {
-		"pixelsPerUnit": 633,
+		"pixelsPerUnit": 673,
 		"pivot": [0.5, 1]
 	},
 	"body_cutter__": {
 		"pixelsPerUnit": 792
 	},
 	"body_cutter_outline__": {
-		"pixelsPerUnit": 633
+		"pixelsPerUnit": 673
 	},
-	"body_assaultbody__": {
+	"body_assaultboat__": {
 		"pixelsPerUnit": 792
 	},
-	"body_assaultbody_outline__": {
+	"body_assaultboat_outline__": {
 		"pixelsPerUnit": 633
 	},
 	"body_tank__": {

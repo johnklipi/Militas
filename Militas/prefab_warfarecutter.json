@@ -5,7 +5,7 @@
 		{
 			"gameObjectName": "Body",
 			"baseName": "body",
-			"coordinates": [0, 0.2],
+			"coordinates": [0, 0],
 			"rotation": 0,
 			"scale": [1, 1],
 			"tintable": false
@@ -13,7 +13,7 @@
 		{
 			"gameObjectName": "Body_Tint",
 			"baseName": "body_tint",
-			"coordinates": [0, 0.2],
+			"coordinates": [0, 0],
 			"rotation": 0,
 			"scale": [1, 1],
 			"tintable": true
