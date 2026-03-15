@@ -196,6 +196,9 @@
 			"terrainRequirements": [
 				{
 					"terrain": "field"
+				},
+				{
+					"terrain": "forest"
 				}
 			],
 			"adjacencyRequirements": [
@@ -336,6 +339,9 @@
 			"terrainRequirements": [
 				{
 					"terrain": "field"
+				},
+				{
+					"terrain": "forest"
 				}
 			],
 			"idx": -1,

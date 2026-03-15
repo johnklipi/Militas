@@ -157,7 +157,7 @@ public static class Main
     {
         UnitState unitState;
         gameState.TryGetUnit(__instance.UnitId, out unitState);
-        if (unitState.HasAbility(UnitAbility.Type.Splash, gameState) && unitState.HasAbility(EnumCache<UnitAbility.Type>.GetType("ionize"), gameState) && unitState.GetRange(gameState) > 1)
+        if (unitState.HasAbility(UnitAbility.Type.Splash) && unitState.HasAbility(EnumCache<UnitAbility.Type>.GetType("ionize")) && unitState.GetRange(gameState) > 1)
         {
             foreach (TileData tileData in gameState.Map.GetTileNeighbors(__instance.Target))
             {
