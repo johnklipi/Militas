@@ -285,6 +285,15 @@ public static class Main
         }
     }
 
+    [HarmonyPostfix]
+    [HarmonyPatch(typeof(GameLogicData), nameof(GameLogicData.IsResourceVisibleToPlayer))]
+    internal static void GameLogicData_IsResourceVisibleToPlayer(ref bool __result, GameLogicData __instance,
+        ResourceData.Type resourceType, PlayerState player, GameState gameState)
+    {
+        if(resourceType == EnumCache<ResourceData.Type>.GetType("oil"))
+            __result = __instance.IsResourceVisibleToPlayer(ResourceData.Type.Game, player, gameState);
+    }
+
     private static void DeionizeUnit(TileData tileData)
     {
         if (tileData == null)
