@@ -301,5 +301,13 @@
 	},
 	"weapon_club_medic_outline__": {
 		"pixelsPerUnit": 1795
-	}
+	},
+    "head_warfare_": {
+        "pixelsPerUnit": 2200,
+        "pivot": [0.515, 0.45]
+    },
+    "head_outline_warfare_": {
+        "pixelsPerUnit": 1650,
+        "pivot": [0.515, 0.45]
+    }
 }
