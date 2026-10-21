@@ -1,0 +1,176 @@
+{
+    "units": [
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "body_assaultboat",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": 0.0,
+                    "tintable": false,
+                    "levels": false
+                },
+                {
+                    "defaultSpriteName": "body_tint_assaultboat",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": 0.0,
+                    "tintable": true,
+                    "levels": false
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "assaultboat",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "body_assaultboat"
+        },
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "body_tank",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": 0.0,
+                    "tintable": false,
+                    "levels": false
+                },
+                {
+                    "defaultSpriteName": "body_tint_tank",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": 0.0,
+                    "tintable": true,
+                    "levels": false
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "tank",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "body_tank"
+        },
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "body_truck",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": 0.0,
+                    "tintable": false,
+                    "levels": false
+                },
+                {
+                    "defaultSpriteName": "body_tint_truck",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": 0.0,
+                    "tintable": true,
+                    "levels": false
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "truck",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "body_truck"
+        },
+		{
+			"skinnedKey": {
+				"unitType": "soldier",
+				"tribeType": "none",
+				"skinType": "default"
+			},
+			"headPositionMarker": "Head",
+			"visualParts": [
+				{
+					"defaultSpriteName": "head",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.013,
+						0.215
+					],
+					"rotation": -0,
+					"tintable": false,
+					"levels": false,
+					"sortingOrderOverride": 2,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "body_default",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.012,
+						0.147
+					],
+					"rotation": -0,
+					"tintable": false,
+					"levels": false,
+					"sortingOrderOverride": 1,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "bodytint_default",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.012,
+						0.147
+					],
+					"rotation": -0,
+					"tintable": true,
+					"levels": false,
+					"sortingOrderOverride": 0,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "weapon_pistol",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.0426,
+						0.1245
+					],
+					"rotation": -0,
+					"tintable": false,
+					"levels": false,
+					"sortingOrderOverride": 3,
+					"outlineSortingOrderOverride": -1
+				}
+			]
+		}
+    ],
+    "improvements": [
+    ],
+    "resources": [
+    ]
+}

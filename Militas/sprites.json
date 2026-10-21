@@ -39,10 +39,10 @@
 	"body_assaultboat_outline__": {
 		"pixelsPerUnit": 633
 	},
-	"body_tank__": {
+	"body_tank": {
 		"pixelsPerUnit": 1056
 	},
-	"body_tank_outline__": {
+	"body_tank_outline": {
 		"pixelsPerUnit": 950
 	},
 	"body_fighterjet__": {
@@ -86,40 +86,40 @@
 	"game_outline_warfare_": {
 		"pixelsPerUnit": 1690
 	},
-	"oil__": {
+	"oil": {
 		"pixelsPerUnit": 1056
 	},
-	"oil_outline__": {
+	"oil_outline": {
 		"pixelsPerUnit": 900
 	},
 	"greenhouse__": {
 		"pixelsPerUnit": 1056
 	},
-	"derrick__": {
+	"derrick": {
 		"pixelsPerUnit": 1056,
 		"pivot": [0.5, 0.25]
 	},
-	"house_warfare_1": {
+	"house_1_warfare": {
 		"pixelsPerUnit": 1800,
 		"pivot": [0.5, 0.05]
 	},
-	"house_warfare_2": {
+	"house_2_warfare": {
 		"pixelsPerUnit": 1800,
 		"pivot": [0.5, 0.05]
 	},
-	"house_warfare_3": {
+	"house_3_warfare": {
 		"pixelsPerUnit": 1800,
 		"pivot": [0.5, 0.05]
 	},
-	"house_warfare_4": {
+	"house_4_warfare": {
 		"pixelsPerUnit": 1800,
 		"pivot": [0.5, 0.05]
 	},
-	"house_warfare_5": {
+	"house_5_warfare": {
 		"pixelsPerUnit": 1800,
 		"pivot": [0.5, 0.05]
 	},
-	"house_warfare_7": {
+	"house_7_warfare": {
 		"pixelsPerUnit": 1800,
 		"pivot": [0.5, 0.05]
 	},
@@ -293,7 +293,7 @@
 		"pixelsPerUnit": 1670,
 		"pivot": [0.5, 0.65]
 	},
-	"weapon_club_soldier_outline__": {
+	"weapon_pistol_outline": {
 		"pixelsPerUnit": 1795
 	},
 	"weapon_club_artillerist_outline__": {
