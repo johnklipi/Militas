@@ -34,7 +34,11 @@
             "visualParts": [
                 {
                     "defaultSpriteName": "body_fighterjet",
-                    "skinningLogic": "UseTribe"
+                    "skinningLogic": "UseTribe",
+					"coordinates": [
+						0,
+						0.2
+                    ]
                 }
             ],
             "skinnedKey": {
@@ -64,7 +68,11 @@
             "visualParts": [
                 {
                     "defaultSpriteName": "body_submarine",
-                    "skinningLogic": "UseTribe"
+                    "skinningLogic": "UseTribe",
+					"coordinates": [
+						0,
+						0.1
+                    ]
                 }
             ],
             "skinnedKey": {
@@ -79,7 +87,11 @@
             "visualParts": [
                 {
                     "defaultSpriteName": "body_tank",
-                    "skinningLogic": "UseTribe"
+                    "skinningLogic": "UseTribe",
+					"coordinates": [
+						0,
+						0.15
+					]
                 }
             ],
             "skinnedKey": {
@@ -94,12 +106,20 @@
             "visualParts": [
                 {
                     "defaultSpriteName": "body_truck",
-                    "skinningLogic": "UseTribe"
+                    "skinningLogic": "UseTribe",
+					"coordinates": [
+						0,
+						0.15
+                    ]
                 },
                 {
                     "defaultSpriteName": "body_tint_truck",
                     "skinningLogic": "UseTribe",
-                    "tintable": true
+                    "tintable": true,
+					"coordinates": [
+						0,
+						0.15
+                    ]
                 }
             ],
             "skinnedKey": {
@@ -234,7 +254,11 @@
         {
             "visualParts": [
                 {
-                    "defaultSpriteName": "nukefacility"
+                    "defaultSpriteName": "nukefacility",
+					"coordinates": [
+						0,
+						0.1
+                    ]
                 }
             ],
             "skinnedKey": {
@@ -247,7 +271,11 @@
         {
             "visualParts": [
                 {
-                    "defaultSpriteName": "nukefacility"
+                    "defaultSpriteName": "nukefacility",
+					"coordinates": [
+						0,
+						0.1
+                    ]
                 }
             ],
             "skinnedKey": {
@@ -260,7 +288,11 @@
         {
             "visualParts": [
                 {
-                    "defaultSpriteName": "nukefacility"
+                    "defaultSpriteName": "nukefacility",
+					"coordinates": [
+						0,
+						0.1
+                    ]
                 }
             ],
             "skinnedKey": {
@@ -273,7 +305,11 @@
         {
             "visualParts": [
                 {
-                    "defaultSpriteName": "nukefacility"
+                    "defaultSpriteName": "nukefacility",
+					"coordinates": [
+						0,
+						0.1
+                    ]
                 }
             ],
             "skinnedKey": {

@@ -5,10 +5,10 @@
 	"body_truck_outline": {
 		"pixelsPerUnit": 1425
 	},
-	"boat_transportship_warfare": {
+	"unit_transportship_warfare": {
 		"pixelsPerUnit": 1056
 	},
-	"boat_transportship_outline_warfare": {
+	"unit_transportship_outline_warfare": {
 		"pixelsPerUnit": 950
 	},
 	"body_helicopter": {
@@ -291,5 +291,11 @@
     "head_outline_warfare": {
         "pixelsPerUnit": 1650,
         "pivot": [0.515, 0.45]
+    },
+    "unit_transportship_tint_outline_warfare": {
+        "spriteOrigin": {
+            "name": "unit_transportship_tint_warfare",
+            "originType": "Outer"
+        }
     }
 }
