@@ -1,42 +1,42 @@
 {
-	"body_truck__": {
+	"body_truck": {
 		"pixelsPerUnit": 1584
 	},
-	"body_truck_outline__": {
+	"body_truck_outline": {
 		"pixelsPerUnit": 1425
 	},
-	"boat_transportship_warfare_": {
+	"boat_transportship_warfare": {
 		"pixelsPerUnit": 1056
 	},
-	"boat_transportship_outline_warfare_": {
+	"boat_transportship_outline_warfare": {
 		"pixelsPerUnit": 950
 	},
-	"body_helicopter__": {
+	"body_helicopter": {
 		"pixelsPerUnit": 792,
 		"pivot": [0.5, 0]
 	},
-	"body_helicopter_outline__": {
+	"body_helicopter_outline": {
 		"pixelsPerUnit": 712,
 		"pivot": [0.5, 0]
 	},
-	"body_submarine__": {
+	"body_submarine": {
 		"pixelsPerUnit": 792,
 		"pivot": [0.5, 1]
 	},
-	"body_submarine_outline__": {
+	"body_submarine_outline": {
 		"pixelsPerUnit": 673,
 		"pivot": [0.5, 1]
 	},
-	"body_cutter__": {
+	"body_cutter": {
 		"pixelsPerUnit": 792
 	},
-	"body_cutter_outline__": {
+	"body_cutter_outline": {
 		"pixelsPerUnit": 673
 	},
-	"body_assaultboat__": {
+	"body_assaultboat": {
 		"pixelsPerUnit": 792
 	},
-	"body_assaultboat_outline__": {
+	"body_assaultboat_outline": {
 		"pixelsPerUnit": 633
 	},
 	"body_tank": {
@@ -45,45 +45,27 @@
 	"body_tank_outline": {
 		"pixelsPerUnit": 950
 	},
-	"body_fighterjet__": {
+	"body_fighterjet": {
 		"pixelsPerUnit": 1056
 	},
-	"body_fighterjet_outline__": {
+	"body_fighterjet_outline": {
 		"pixelsPerUnit": 845
 	},
-	"body_nukelauncher__": {
+	"nukefacility": {
 		"pixelsPerUnit": 1056
 	},
-	"body_nukelauncher_outline__": {
+	"nukefacility_outline": {
 		"pixelsPerUnit": 950
 	},
-	"body_nukelauncherone__": {
-		"pixelsPerUnit": 1056
-	},
-	"body_nukelauncherone_outline__": {
-		"pixelsPerUnit": 950
-	},
-	"body_nukelaunchertwo__": {
-		"pixelsPerUnit": 1056
-	},
-	"body_nukelaunchertwo_outline__": {
-		"pixelsPerUnit": 950
-	},
-	"body_nukelauncherfinal__": {
-		"pixelsPerUnit": 1056
-	},
-	"body_nukelauncherfinal_outline__": {
-		"pixelsPerUnit": 950
-	},
-	"fruit_warfare_": {
+	"fruit_warfare": {
 		"pixelsPerUnit": 950,
 		"pivot": [0.5, 0.4]
 	},
-	"fruit_outline_warfare_": {
+	"fruit_outline_warfare": {
 		"pixelsPerUnit": 855,
 		"pivot": [0.5, 0.4]
 	},
-	"game_outline_warfare_": {
+	"game_outline_warfare": {
 		"pixelsPerUnit": 1690
 	},
 	"oil": {
@@ -92,7 +74,7 @@
 	"oil_outline": {
 		"pixelsPerUnit": 900
 	},
-	"greenhouse__": {
+	"greenhouse": {
 		"pixelsPerUnit": 1056
 	},
 	"derrick": {
@@ -123,190 +105,190 @@
 		"pixelsPerUnit": 1800,
 		"pivot": [0.5, 0.05]
 	},
-	"refinary__0": {
+	"refinary": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.25]
 	},
-	"refinary__1": {
+	"refinary_1": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.25]
 	},
-	"refinary__2": {
+	"refinary_2": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.25]
 	},
-	"refinary__3": {
+	"refinary_3": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.25]
 	},
-	"refinary__4": {
+	"refinary_4": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.25]
 	},
-	"refinary__5": {
+	"refinary_5": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.25]
 	},
-	"refinary__6": {
+	"refinary_6": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.25]
 	},
-	"refinary__7": {
+	"refinary_7": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.25]
 	},
-	"refinary__8": {
+	"refinary_8": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.25]
 	},
-	"facility__0": {
+	"facility": {
 		"pixelsPerUnit": 845,
 		"pivot": [0.5, 0.25]
 	},
-	"facility__1": {
+	"facility_1": {
 		"pixelsPerUnit": 845,
 		"pivot": [0.5, 0.25]
 	},
-	"facility__2": {
+	"facility_2": {
 		"pixelsPerUnit": 845,
 		"pivot": [0.5, 0.25]
 	},
-	"facility__3": {
+	"facility_3": {
 		"pixelsPerUnit": 845,
 		"pivot": [0.5, 0.25]
 	},
-	"facility__4": {
+	"facility_4": {
 		"pixelsPerUnit": 845,
 		"pivot": [0.5, 0.25]
 	},
-	"facility__5": {
+	"facility_5": {
 		"pixelsPerUnit": 845,
 		"pivot": [0.5, 0.25]
 	},
-	"facility__6": {
+	"facility_6": {
 		"pixelsPerUnit": 845,
 		"pivot": [0.5, 0.25]
 	},
-	"facility__7": {
+	"facility_7": {
 		"pixelsPerUnit": 845,
 		"pivot": [0.5, 0.25]
 	},
-	"facility__8": {
+	"facility_8": {
 		"pixelsPerUnit": 845,
 		"pivot": [0.5, 0.25]
 	},
-	"shop__0": {
+	"shop": {
 		"pixelsPerUnit": 660
 	},
-	"shop__1": {
+	"shop_1": {
 		"pixelsPerUnit": 660
 	},
-	"shop__2": {
+	"shop_2": {
 		"pixelsPerUnit": 660
 	},
-	"shop__3": {
+	"shop_3": {
 		"pixelsPerUnit": 660
 	},
-	"shop__4": {
+	"shop_4": {
 		"pixelsPerUnit": 660
 	},
-	"shop__5": {
+	"shop_5": {
 		"pixelsPerUnit": 660
 	},
-	"shop__6": {
+	"shop_6": {
 		"pixelsPerUnit": 660
 	},
-	"shop__7": {
+	"shop_7": {
 		"pixelsPerUnit": 660
 	},
-	"shop__8": {
+	"shop_8": {
 		"pixelsPerUnit": 660
 	},
-	"cafeteria__0": {
+	"cafeteria": {
 		"pixelsPerUnit": 596,
 		"pivot": [0.5, 0.4]
 	},
-	"cafeteria__1": {
+	"cafeteria_1": {
 		"pixelsPerUnit": 596,
 		"pivot": [0.5, 0.4]
 	},
-	"cafeteria__2": {
+	"cafeteria_2": {
 		"pixelsPerUnit": 596,
 		"pivot": [0.5, 0.4]
 	},
-	"cafeteria__3": {
+	"cafeteria_3": {
 		"pixelsPerUnit": 596,
 		"pivot": [0.5, 0.4]
 	},
-	"cafeteria__4": {
+	"cafeteria_4": {
 		"pixelsPerUnit": 596,
 		"pivot": [0.5, 0.4]
 	},
-	"cafeteria__5": {
+	"cafeteria_5": {
 		"pixelsPerUnit": 596,
 		"pivot": [0.5, 0.4]
 	},
-	"cafeteria__6": {
+	"cafeteria_6": {
 		"pixelsPerUnit": 596,
 		"pivot": [0.5, 0.4]
 	},
-	"cafeteria__7": {
+	"cafeteria_7": {
 		"pixelsPerUnit": 596,
 		"pivot": [0.5, 0.4]
 	},
-	"cafeteria__8": {
+	"cafeteria_8": {
 		"pixelsPerUnit": 596,
 		"pivot": [0.5, 0.4]
 	},
-	"monument1_warfare_": {
+	"monument1_warfare": {
 		"pixelsPerUnit": 1584,
 		"pivot": [0.5, 0.3]
 	},
-	"monument2_warfare_": {
+	"monument2_warfare": {
 		"pixelsPerUnit": 1056
 	},
-	"monument3_warfare_": {
+	"monument3_warfare": {
 		"pixelsPerUnit": 1056,
 		"pivot": [0.475, 0.45]
 	},
-	"monument4_warfare_": {
+	"monument4_warfare": {
 		"pixelsPerUnit": 950,
 		"pivot": [0.5, 0.4]
 	},
-	"monument5_warfare_": {
+	"monument5_warfare": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.3]
 	},
-	"monument6_warfare_": {
+	"monument6_warfare": {
 		"pixelsPerUnit": 660,
 		"pivot": [0.5, 0.4]
 	},
-	"monument7_warfare_": {
+	"monument7_warfare": {
 		"pixelsPerUnit": 850,
 		"pivot": [0.5, 0.3]
 	},
-	"catapult_missilelauncher__": {
+	"catapult_missilelauncher": {
 		"pixelsPerUnit": 1856,
 		"pivot": [0.5, 0.65]
 	},
-	"catapult_missilelauncher_outline__": {
+	"catapult_missilelauncher_outline": {
 		"pixelsPerUnit": 1670,
 		"pivot": [0.5, 0.65]
 	},
 	"weapon_pistol_outline": {
 		"pixelsPerUnit": 1795
 	},
-	"weapon_club_artillerist_outline__": {
+	"weapon_rifle_outline": {
 		"pixelsPerUnit": 1795
 	},
-	"weapon_club_medic_outline__": {
+	"medic_kit_outline": {
 		"pixelsPerUnit": 1795
 	},
-    "head_warfare_": {
+    "head_warfare": {
         "pixelsPerUnit": 2200,
         "pivot": [0.515, 0.45]
     },
-    "head_outline_warfare_": {
+    "head_outline_warfare": {
         "pixelsPerUnit": 1650,
         "pivot": [0.515, 0.45]
     }

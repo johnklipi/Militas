@@ -4,27 +4,7 @@
             "visualParts": [
                 {
                     "defaultSpriteName": "body_assaultboat",
-                    "skinningLogic": "UseTribe",
-                    "improvementSkinningLogic": "TileOwner",
-                    "coordinates": [
-                        0.0,
-                        0.0
-                    ],
-                    "rotation": 0.0,
-                    "tintable": false,
-                    "levels": false
-                },
-                {
-                    "defaultSpriteName": "body_tint_assaultboat",
-                    "skinningLogic": "UseTribe",
-                    "improvementSkinningLogic": "TileOwner",
-                    "coordinates": [
-                        0.0,
-                        0.0
-                    ],
-                    "rotation": 0.0,
-                    "tintable": true,
-                    "levels": false
+                    "skinningLogic": "UseTribe"
                 }
             ],
             "skinnedKey": {
@@ -34,31 +14,72 @@
             },
             "headPositionMarker": "body_assaultboat"
         },
+
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "body_cutter",
+                    "skinningLogic": "UseTribe"
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "cutter",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "body_cutter"
+        },
+
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "body_fighterjet",
+                    "skinningLogic": "UseTribe"
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "fighterjet",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "body_fighterjet"
+        },
+
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "body_helicopter",
+                    "skinningLogic": "UseTribe"
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "helicopter",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "body_helicopter"
+        },
+
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "body_submarine",
+                    "skinningLogic": "UseTribe"
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "submarine",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "body_submarine"
+        },
+
         {
             "visualParts": [
                 {
                     "defaultSpriteName": "body_tank",
-                    "skinningLogic": "UseTribe",
-                    "improvementSkinningLogic": "TileOwner",
-                    "coordinates": [
-                        0.0,
-                        0.0
-                    ],
-                    "rotation": 0.0,
-                    "tintable": false,
-                    "levels": false
-                },
-                {
-                    "defaultSpriteName": "body_tint_tank",
-                    "skinningLogic": "UseTribe",
-                    "improvementSkinningLogic": "TileOwner",
-                    "coordinates": [
-                        0.0,
-                        0.0
-                    ],
-                    "rotation": 0.0,
-                    "tintable": true,
-                    "levels": false
+                    "skinningLogic": "UseTribe"
                 }
             ],
             "skinnedKey": {
@@ -68,31 +89,17 @@
             },
             "headPositionMarker": "body_tank"
         },
+
         {
             "visualParts": [
                 {
                     "defaultSpriteName": "body_truck",
-                    "skinningLogic": "UseTribe",
-                    "improvementSkinningLogic": "TileOwner",
-                    "coordinates": [
-                        0.0,
-                        0.0
-                    ],
-                    "rotation": 0.0,
-                    "tintable": false,
-                    "levels": false
+                    "skinningLogic": "UseTribe"
                 },
                 {
                     "defaultSpriteName": "body_tint_truck",
                     "skinningLogic": "UseTribe",
-                    "improvementSkinningLogic": "TileOwner",
-                    "coordinates": [
-                        0.0,
-                        0.0
-                    ],
-                    "rotation": 0.0,
-                    "tintable": true,
-                    "levels": false
+                    "tintable": true
                 }
             ],
             "skinnedKey": {
@@ -102,6 +109,7 @@
             },
             "headPositionMarker": "body_truck"
         },
+
 		{
 			"skinnedKey": {
 				"unitType": "soldier",
@@ -113,28 +121,20 @@
 				{
 					"defaultSpriteName": "head",
 					"skinningLogic": "UseTribe",
-					"improvementSkinningLogic": "TileOwner",
 					"coordinates": [
 						-0.013,
 						0.215
 					],
-					"rotation": -0,
-					"tintable": false,
-					"levels": false,
 					"sortingOrderOverride": 2,
 					"outlineSortingOrderOverride": -1
 				},
 				{
 					"defaultSpriteName": "body_default",
 					"skinningLogic": "UseTribe",
-					"improvementSkinningLogic": "TileOwner",
 					"coordinates": [
 						-0.012,
 						0.147
 					],
-					"rotation": -0,
-					"tintable": false,
-					"levels": false,
 					"sortingOrderOverride": 1,
 					"outlineSortingOrderOverride": -1
 				},
@@ -146,9 +146,7 @@
 						-0.012,
 						0.147
 					],
-					"rotation": -0,
 					"tintable": true,
-					"levels": false,
 					"sortingOrderOverride": 0,
 					"outlineSortingOrderOverride": -1
 				},
@@ -160,9 +158,288 @@
 						-0.0426,
 						0.1245
 					],
-					"rotation": -0,
-					"tintable": false,
-					"levels": false,
+					"sortingOrderOverride": 3,
+					"outlineSortingOrderOverride": -1
+				}
+			]
+		},
+
+        {
+            "skinnedKey": {
+                "unitType": "missilelauncher",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "Head",
+            "visualParts": [
+                {
+                    "defaultSpriteName": "head",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                    0.0376,
+                    0.3166
+                    ],
+                    "rotation": -0,
+                    "tintable": false,
+                    "levels": false,
+                    "sortingOrderOverride": 2,
+                    "outlineSortingOrderOverride": -1
+                },
+                {
+                    "defaultSpriteName": "body_default",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                    0.038000003,
+                    0.24700001
+                    ],
+                    "rotation": -0,
+                    "tintable": false,
+                    "levels": false,
+                    "sortingOrderOverride": 1,
+                    "outlineSortingOrderOverride": -1
+                },
+                {
+                    "defaultSpriteName": "bodytint_default",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                    0.038000003,
+                    0.24700001
+                    ],
+                    "rotation": -0,
+                    "tintable": true,
+                    "levels": false,
+                    "sortingOrderOverride": 0,
+                    "outlineSortingOrderOverride": -1
+                },
+                {
+                    "defaultSpriteName": "catapult_missilelauncher",
+                    "skinningLogic": "UseTribe",
+                    "improvementSkinningLogic": "TileOwner",
+                    "coordinates": [
+                        0,
+                        0.15
+                    ],
+                    "rotation": -0,
+                    "tintable": false,
+                    "levels": false,
+                    "sortingOrderOverride": 3,
+                    "outlineSortingOrderOverride": -1
+                }
+            ]
+        },
+
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "nukefacility"
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "nukelauncher",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "nukefacility"
+        },
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "nukefacility"
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "nukelauncherone",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "nukefacility"
+        },
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "nukefacility"
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "nukelaunchertwo",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "nukefacility"
+        },
+        {
+            "visualParts": [
+                {
+                    "defaultSpriteName": "nukefacility"
+                }
+            ],
+            "skinnedKey": {
+                "unitType": "nukelauncherfinal",
+                "tribeType": "none",
+                "skinType": "default"
+            },
+            "headPositionMarker": "nukefacility"
+        },
+
+        {
+			"skinnedKey": {
+				"unitType": "soldier",
+				"tribeType": "none",
+				"skinType": "default"
+			},
+			"headPositionMarker": "Head",
+			"visualParts": [
+				{
+					"defaultSpriteName": "head",
+					"skinningLogic": "UseTribe",
+					"coordinates": [
+						-0.013,
+						0.215
+					],
+					"sortingOrderOverride": 2,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "body_default",
+					"skinningLogic": "UseTribe",
+					"coordinates": [
+						-0.012,
+						0.147
+					],
+					"sortingOrderOverride": 1,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "bodytint_default",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.012,
+						0.147
+					],
+					"tintable": true,
+					"sortingOrderOverride": 0,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "weapon_pistol",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.0426,
+						0.1245
+					],
+					"sortingOrderOverride": 3,
+					"outlineSortingOrderOverride": -1
+				}
+			]
+		},
+
+        {
+			"skinnedKey": {
+				"unitType": "medic",
+				"tribeType": "none",
+				"skinType": "default"
+			},
+			"headPositionMarker": "Head",
+			"visualParts": [
+				{
+					"defaultSpriteName": "head",
+					"skinningLogic": "UseTribe",
+					"coordinates": [
+						-0.013,
+						0.215
+					],
+					"sortingOrderOverride": 2,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "body_default",
+					"skinningLogic": "UseTribe",
+					"coordinates": [
+						-0.012,
+						0.147
+					],
+					"sortingOrderOverride": 1,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "bodytint_default",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.012,
+						0.147
+					],
+					"tintable": true,
+					"sortingOrderOverride": 0,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "medic_kit",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.0426,
+						0.1245
+					],
+					"sortingOrderOverride": 3,
+					"outlineSortingOrderOverride": -1
+				}
+			]
+		},
+
+        {
+			"skinnedKey": {
+				"unitType": "artillerist",
+				"tribeType": "none",
+				"skinType": "default"
+			},
+			"headPositionMarker": "Head",
+			"visualParts": [
+				{
+					"defaultSpriteName": "head",
+					"skinningLogic": "UseTribe",
+					"coordinates": [
+						-0.013,
+						0.215
+					],
+					"sortingOrderOverride": 2,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "body_default",
+					"skinningLogic": "UseTribe",
+					"coordinates": [
+						-0.012,
+						0.147
+					],
+					"sortingOrderOverride": 1,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "bodytint_default",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.012,
+						0.147
+					],
+					"tintable": true,
+					"sortingOrderOverride": 0,
+					"outlineSortingOrderOverride": -1
+				},
+				{
+					"defaultSpriteName": "weapon_rifle",
+					"skinningLogic": "UseTribe",
+					"improvementSkinningLogic": "TileOwner",
+					"coordinates": [
+						-0.0426,
+						0.1245
+					],
 					"sortingOrderOverride": 3,
 					"outlineSortingOrderOverride": -1
 				}
