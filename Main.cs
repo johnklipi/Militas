@@ -13,7 +13,6 @@ public static class Main
     {
         PolyMod.Loader.AddPatchDataType("unitEffect", typeof(UnitEffect));
         PolyMod.Loader.AddPatchDataType("tribeAbility", typeof(TribeAbility.Type));
-        PolyMod.Registry.autoidx++;
         Harmony.CreateAndPatchAll(typeof(Main));
         modLogger = logger;
     }

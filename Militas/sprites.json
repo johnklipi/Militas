@@ -14,7 +14,7 @@
 	"unit_transportship_warfare": {
 		"pixelsPerUnit": 1056
 	},
-	"unit_transportship_outline_warfare": {
+	"unit_transportship_warfare_outline": {
 		"pixelsPerUnit": 950,
 		"spriteOrigin":{
 			"originType": "Outer",
@@ -113,7 +113,7 @@
 		"pixelsPerUnit": 950,
 		"pivot": [0.5, 0.4]
 	},
-	"fruit_outline_warfare": {
+	"fruit_warfare_outline": {
 		"pixelsPerUnit": 855,
 		"pivot": [0.5, 0.4],
 		"spriteOrigin":{
@@ -123,7 +123,7 @@
 		"gaussianBlurRadius": 32.0,
 		"transformToOutline": true
 	},
-	"game_outline_warfare": {
+	"game_warfare_outline": {
 		"pixelsPerUnit": 1690,
 		"spriteOrigin":{
 			"originType": "Outer",
@@ -382,7 +382,7 @@
         "pixelsPerUnit": 2200,
         "pivot": [0.515, 0.45]
     },
-    "head_outline_warfare": {
+    "head_warfare_outline": {
         "pixelsPerUnit": 1650,
         "pivot": [0.515, 0.45],
 		"spriteOrigin":{
@@ -392,7 +392,7 @@
 		"gaussianBlurRadius": 32.0,
 		"transformToOutline": true
     },
-    "unit_transportship_tint_outline_warfare": {
+    "unit_transportship_tint_warfare_outline": {
         "spriteOrigin": {
             "name": "unit_transportship_tint_warfare",
             "originType": "Outer"
