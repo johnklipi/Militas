@@ -3,146 +3,157 @@
 		"pixelsPerUnit": 1584
 	},
 	"body_truck_outline": {
-		"pixelsPerUnit": 1425,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "body_truck"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"unit_transportship_warfare": {
 		"pixelsPerUnit": 1056
 	},
 	"unit_transportship_warfare_outline": {
-		"pixelsPerUnit": 950,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "unit_transportship_warfare"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"body_helicopter": {
 		"pixelsPerUnit": 792,
 		"pivot": [0.5, 0]
 	},
 	"body_helicopter_outline": {
-		"pixelsPerUnit": 712,
 		"pivot": [0.5, 0],
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "body_helicopter"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"body_submarine": {
 		"pixelsPerUnit": 1009
 	},
 	"body_submarine_outline": {
-		"pixelsPerUnit": 857,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "body_submarine"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"body_cutter": {
 		"pixelsPerUnit": 1009
 	},
 	"body_cutter_outline": {
-		"pixelsPerUnit": 857,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "body_cutter"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"body_assaultboat": {
 		"pixelsPerUnit": 1009
 	},
 	"body_assaultboat_outline": {
-		"pixelsPerUnit": 857,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "body_assaultboat"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"body_tank": {
 		"pixelsPerUnit": 1056
 	},
 	"body_tank_outline": {
-		"pixelsPerUnit": 950,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "body_tank"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"body_fighterjet": {
 		"pixelsPerUnit": 1056
 	},
 	"body_fighterjet_outline": {
-		"pixelsPerUnit": 845,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "body_fighterjet"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"nukefacility": {
 		"pixelsPerUnit": 1056
 	},
 	"nukefacility_outline": {
-		"pixelsPerUnit": 950,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "nukefacility"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"fruit_warfare": {
 		"pixelsPerUnit": 950,
 		"pivot": [0.5, 0.4]
 	},
 	"fruit_warfare_outline": {
-		"pixelsPerUnit": 855,
-		"pivot": [0.5, 0.4],
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "fruit_warfare"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"game_warfare_outline": {
-		"pixelsPerUnit": 1690,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "game_warfare"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"oil": {
 		"pixelsPerUnit": 1056
 	},
 	"oil_outline": {
-		"pixelsPerUnit": 900,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "oil"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"greenhouse": {
 		"pixelsPerUnit": 1056
@@ -342,55 +353,58 @@
 		"pivot": [0.5, 0.65]
 	},
 	"catapult_missilelauncher_outline": {
-		"pixelsPerUnit": 1670,
-		"pivot": [0.5, 0.65],
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "catapult_missilelauncher"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"weapon_pistol_outline": {
-		"pixelsPerUnit": 1795,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "weapon_pistol"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"weapon_rifle_outline": {
-		"pixelsPerUnit": 1795,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "weapon_rifle"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
 	"medic_kit_outline": {
-		"pixelsPerUnit": 1795,
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "medic_kit"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
 	},
     "head_warfare": {
         "pixelsPerUnit": 2200,
         "pivot": [0.515, 0.45]
     },
     "head_warfare_outline": {
-        "pixelsPerUnit": 1650,
-        "pivot": [0.515, 0.45],
 		"spriteOrigin":{
 			"originType": "Outer",
 			"name": "head_warfare"
 		},
-		"gaussianBlurRadius": 32.0,
-		"transformToOutline": true
+		"outline": {
+			"thickness": 20,
+			"blur": 32
+		}
     },
     "unit_transportship_tint_warfare_outline": {
         "spriteOrigin": {
